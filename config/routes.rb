@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-<<<<<<< HEAD
   get 'welcome/index'
 
   get 'welcome/about'
 
-  root 'welcome#index'
+  get 'welcome/contact'
 
-=======
+  root 'welcome#index'
 end
