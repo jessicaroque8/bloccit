@@ -21,6 +21,20 @@ require 'random_data'
    )
  end
 
+ puts "#{Post.count} posts created"
+
+   Post.find_or_create_by!(
+      title: 'Unique post',
+      body: 'This is my unique post body.'
+   )
+
+ puts "#{Comment.count} comments created"
+
+   Comment.find_or_create_by!(
+      post_id: 51,
+      body: 'This is my unique comment.'
+   )
+
  puts "Seed finished"
  puts "#{Post.count} posts created"
  puts "#{Comment.count} comments created"
