@@ -1,5 +1,8 @@
-<h1>All Posts</h1>
-<button type="button" class="btn btn-success"><a href="/posts/new">New Post</a></button>
+<div class="page-header">
+   <button type="button" class="pull-right btn-sm btn-success"><a href="/posts/new">New Post</a></button>
+   <h1>All Posts</h1>
+</div>
+
  <% @posts.each do |post| %>
    <div class="media">
      <div class="media-body">
