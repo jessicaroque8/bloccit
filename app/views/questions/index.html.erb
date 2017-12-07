@@ -1,0 +1,14 @@
+<div class="page-header">
+   <%=link_to "New Question", new_question_path, class: 'pull-right btn btn-success' %>
+   <h1>All Questions</h1>
+</div>
+
+<% @questions.each do |q| %>
+   <div class="media">
+     <div class="media-body">
+       <h4 class="media-heading">
+         <%= link_to q.title, q %>
+       </h4>
+      </div>
+   </div>
+<% end %>
