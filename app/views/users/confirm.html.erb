@@ -1,0 +1,26 @@
+<div class="page-header">
+   <h2>Sign Up Confirmation</h2>
+</div>
+
+<div class="row">
+
+   <div class="col-md-4">
+      <h4>Are you sure these values are correct?</h4>
+
+      <%= form_for @user do |u| %>
+        <div class="form-group">
+         <h5><%= u.label :name %>: <%= @user.name %></h5>
+        </div>
+
+        <div class="form-group">
+           <h5><%= u.label :email %>: <%= @user.email %></h5>
+        </div>
+
+        <div class="form-group">
+            <%= button_to "Yes", {controller: "users", action: "create", params: params.require(:user).permit(:name, :email, :password, :password_confirmation)}, class: 'btn btn-success' %>
+            <%= button_to "No", new_user_path, :method => :get, class: 'btn btn-warning' %>
+        </div>
+       <% end %>
+   </div>
+
+</div>
