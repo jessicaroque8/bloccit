@@ -11,7 +11,8 @@ require 'random_data'
     SponsoredPost.create!(
       topic: topics.sample,
       title:  RandomData.random_sentence,
-      body:   RandomData.random_paragraph
+      body:   RandomData.random_paragraph,
+      price: 10,
    )
  end
 
