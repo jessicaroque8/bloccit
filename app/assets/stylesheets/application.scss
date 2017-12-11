@@ -18,6 +18,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.remember-checkbox, input[type="checkbox"] {
-  margin-left: 10px;
+.remember-checkbox {
+  margin-left: 10px !important;
+}
+
+.nav-user {
+   display: inline !important;
+}
+
+.user-info {
+   padding-right: 10px;
+   padding-top: 3px;
+   text-align: center;
 }
