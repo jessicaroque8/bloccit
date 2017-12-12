@@ -10,6 +10,7 @@ class UsersController < ApplicationController
      @user.email = params[:email]
      @user.password = params[:password]
      @user.password_confirmation = params[:password_confirmation]
+   end
 
    def create
      @user = User.new
