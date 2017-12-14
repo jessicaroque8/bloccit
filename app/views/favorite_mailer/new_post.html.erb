@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>We'll send you updates on your new post.</h1>
+
+     <p>
+       To keep you in the loop on new comments on your post, <%= @post.title %>, you'll receive email updates whenever there's a new comment.
+     </p>
+
+     <p>
+       To disable these notifications, simply unfavorite your post.
+     </p>
+
+     <p>
+       <%= link_to "View Post on site", topic_post_url(@post.topic, @post) %>
+     </p>
+   </body>
+ </html>

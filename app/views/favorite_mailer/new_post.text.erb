@@ -1,0 +1,6 @@
+To keep you in the loop on new comments on your post, <%= @post.title %>, you'll receive email updates whenever there's a new comment.
+ <%= "=" * (@post.title.length + 12) %>
+
+ To disable these notifications, simply unfavorite your post.
+
+ Visit online at: <%= topic_post_url(@post.topic, @post) %>
