@@ -28,7 +28,7 @@ RSpec.describe Post, type: :model do
 
    describe "attributes" do
      it "has title, body, and user attribute" do
-       expect(post).to have_attributes(title: title, body: body, user: user)
+       expect(post).to have_attributes(title: post.title, body: post.body)
      end
    end
 
