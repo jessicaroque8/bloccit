@@ -39,7 +39,6 @@ gem 'thor', '0.19.1'
 
 group :development do
   gem 'listen', '~> 3.0.5'
-  gem 'pry-rails'
 end
 
 group :development, :test do
@@ -47,6 +46,8 @@ group :development, :test do
    gem 'rails-controller-testing'
    gem 'shoulda'
    gem 'factory_bot_rails', '~> 4.0'
+   gem 'pry-rails'
+   gem 'byebug'
 end
 
 gem 'bootstrap-sass'
